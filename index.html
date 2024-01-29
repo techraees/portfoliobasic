@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link href="vendor/icofont/icofont.min.css" rel="stylesheet" />
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
     <link
       rel="stylesheet"
@@ -27,6 +29,9 @@
   <style>
     .checked {
       color: #404145;
+    }
+    * {
+      scroll-behavior: smooth;
     }
   </style>
   <body>
@@ -59,61 +64,26 @@
             >
               <ul class="nav navbar-nav menu_nav justify-content-end">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
+                  <a class="nav-link" href="#brand">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Pages</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="elements.html">Elements</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="portfolio-details.html"
-                        >Portfolio Details</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Blog</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="single-blog.html"
-                        >Blog Details</a
-                      >
-                    </li>
-                  </ul>
+                  <a class="nav-link" href="#features">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="#team">My Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+             
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -124,7 +94,7 @@
     <!--================ End Header Area =================-->
 
     <!--================ Start Home Banner Area =================-->
-    <section class="home_banner_area">
+    <section class="home_banner_area" id="home">
       <div class="banner_inner">
         <div class="container">
           <div class="row">
@@ -156,7 +126,11 @@
     <!--================ End Home Banner Area =================-->
 
     <!--================ Start About Us Area =================-->
-    <section class="about_area section_gap" style="padding-top: 100px">
+    <section
+      class="about_area section_gap"
+      id="about"
+      style="padding-top: 10px;padding-bottom: 50px;"
+    >
       <div class="container">
         <div class="row justify-content-start align-items-center">
           <div class="col-lg-5">
@@ -191,7 +165,7 @@
     <!--================ End About Us Area =================-->
 
     <!--================ Srart Brand Area =================-->
-    <section class="brand_area section_gap_bottom">
+    <section class="brand_area section_gap_bottom" >
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -284,11 +258,11 @@
     <!--================ End Brand Area =================-->
 
     <!--================ Start Features Area =================-->
-    <section class="features_area">
+    <section class="features_area"  id="brand">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <div class="main_title">
+            <div class="main_title" style="margin-bottom: 100px;">
               <h2>service offers</h2>
               <p>
                 Is give may shall likeness made yielding spirit a itself togeth
@@ -360,7 +334,7 @@
     <!--================ End Features Area =================-->
 
     <!--================Start Portfolio Area =================-->
-    <section class="portfolio_area" id="portfolio">
+    <section class="portfolio_area" id="features" >
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -580,7 +554,7 @@
     <!--================End Portfolio Area =================-->
 
     <!--================ Start Testimonial Area =================-->
-    <div class="testimonial_area section_gap_bottom">
+    <div class="testimonial_area section_gap_bottom" id="reviews" style="padding-bottom: 0;">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
@@ -1165,8 +1139,152 @@
     </div>
     <!--================ End Testimonial Area =================-->
 
+    <!-- ==================== Team Section ======================== -->
+    <section id="team" class="team" style="padding-bottom: 150px;">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up" style="display: flex; justify-content: center; flex-direction: column; align-items: center; position: relative;">
+          <h2>Team</h2>
+          <p>Our team is always here to help</p>
+        </div>
+
+        <div class="row" style="padding-top: 80px;">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="member">
+              <img src="img/team/raees.jpg" class="img-fluid" alt="" />
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Raees Ahmad</h4>
+                  <span>MERN Stack & Team Lead</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="member">
+              <img src="img/team/haris.png" class="img-fluid" alt="" />
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Haris Ali</h4>
+                  <span>Frontend Developer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="member">
+              <img src="img/team/zain.png" class="img-fluid" alt="" />
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Zain Zafar</h4>
+                  <span>MERN stack & Next.js</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="member">
+              <img src="img/team/zaid.jpg" class="img-fluid" alt="" />
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Zaid Munawar</h4>
+                  <span>Laravel PHP Developer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="member">
+              <img src="img/team/ahmad.png" class="img-fluid" alt="" />
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Ahmed Ali</h4>
+                  <span>Python Developer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="member">
+              <img src="img/team/profile.png" class="img-fluid" alt="" />
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Bilal Munawar</h4>
+                  <span>Laravel Developer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= End Team Section ==================== -->
+
     <!--================ Start Newsletter Area =================-->
-    <section class="newsletter_area">
+    <section class="newsletter_area" id="contact">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-12">
@@ -1215,6 +1333,63 @@
     </section>
     <!--================ End Newsletter Area =================-->
 
+    <!--================ Start Login Popup Area =================-->
+    <div class="bodypopup">
+      <div class="container-popup" id="container-popup">
+        <div class="form-container-popup sign-up-container-popup">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container-popup">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container-popup sign-in-container-popup">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container-popup">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <a href="#">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container-popup">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================ End Login Popup Area =================-->
+
     <!--================Footer Area =================-->
     <footer class="footer_area">
       <div class="container">
@@ -1229,18 +1404,27 @@
               </div>
               <div class="footer_social">
                 <a
-                  href="https://www.facebook.com/profile.php?id=100028619040260"  target="_blank" 
+                  href="https://www.facebook.com/profile.php?id=100028619040260"
+                  target="_blank"
                   ><i class="fa fa-facebook"></i
                 ></a>
-                <a href="https://www.upwork.com/freelancers/~01a7ad3b86dd0f3d18?viewMode=1" target="_blank"
+                <a
+                  href="https://www.upwork.com/freelancers/~01a7ad3b86dd0f3d18?viewMode=1"
+                  target="_blank"
                   ><img
                     src="https://cdn.iconscout.com/icon/free/png-512/free-upwork-3521785-2945283.png?f=webp&w=256"
-                    alt="" width="20px" height="20px" style="filter: grayscale(100%);"
+                    alt=""
+                    width="20px"
+                    height="20px"
+                    style="filter: grayscale(100%)"
                 /></a>
                 <a href="https://www.fiverr.com/techraees" target="_blank"
                   ><img
                     src="https://cdn.iconscout.com/icon/free/png-512/free-fiverr-722695.png?f=webp&w=256"
-                    alt="" width="18px" height="18px" style="filter: grayscale(100%);"
+                    alt=""
+                    width="18px"
+                    height="18px"
+                    style="filter: grayscale(100%)"
                 /></a>
                 <a
                   href="https://www.linkedin.com/in/rana-raees-6582aa2b1/"
@@ -1261,7 +1445,7 @@
             <script>
               document.write(new Date().getFullYear());
             </script>
-            All rights reserved 
+            All rights reserved
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>
@@ -1286,5 +1470,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
     <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/popuphire.js"></script>
   </body>
 </html>
